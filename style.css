@@ -1,0 +1,171 @@
+body{
+    background-color: rgb(14, 11, 11);
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#input-choice{
+    height: 60px;
+    width: 250px;
+    border: none;
+    border-radius: 40px 0px 0px 40px;
+}
+#box_insert{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    height: auto;
+    width: 400px;
+}
+#input{
+    height: 120px;
+    width: auto;
+    padding-top: 40px;
+    display: flex;
+}
+#input-choice{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 20px;
+}
+#icone{
+    border-left: solid 2px  ;
+    height: 60px;
+    width: 60px;
+    background-color: #fff;
+    border-radius: 0px 40px 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#icone img{
+  height: 40px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#icone img:hover{
+   rotate: 360deg;
+}
+
+/* to do tache */
+
+.box_infos{
+    background-color: rgb(191, 197, 18);
+    border-radius: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    max-width: min-content;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+#heure{
+    padding-right: 8px;
+    box-sizing: border-box;
+    margin-left: 5px;
+    text-align: center;
+}
+.heure-selection {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+hr{
+    rotate: 90deg;
+    width: 0,5cm;
+    
+}
+#heure_depart , #heure_final{
+    text-align: center;
+    font-size: 7px;
+    line-height: 9px;
+    font-weight: 500
+}
+#heure_depart{
+    padding-bottom: 1px;
+    padding-top: 5px;
+}
+#heure_final{
+    padding-top: 1px;
+}
+
+
+
+
+
+
+.to_do_tache{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-cercle{
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 500px;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+}
+.demi-cercle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    transform-origin: right center;
+}
+.demi-cercle:nth-child(1){
+    background-color: rgb(10, 17, 123);
+    z-index: 2;
+    display: flex;
+    flex-direction: row-reverse;
+    rotate: 180deg;
+    opacity:0
+}
+.demi-cercle:nth-child(2){
+    background-color: rgb(10, 17, 123);
+    z-index: 3;
+}
+.demi-cercle:nth-child(3){
+    background-color: rgb(255, 255, 255);
+    z-index: 4;
+    display: none;
+}
+.cercle-premier{
+    height: 280px;
+    width: 280px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5; 
+}
+.container-cercle:hover .demi-cercle:nth-child(2){
+    transform: rotate(360deg);
+    transition: 2.9s linear;
+}
+.container-cercle:hover .demi-cercle:nth-child(1){
+    opacity: 1;
+    transition: 3s ;
+}
